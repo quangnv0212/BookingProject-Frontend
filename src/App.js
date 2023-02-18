@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Main from "./components/Layout/Main";
 import LoginPage from "./pages/Auth/LoginPage";
 import RegisterPage from "./pages/Auth/RegisterPage";
@@ -18,6 +20,7 @@ function App() {
           <Route path="/login" element={<LoginPage></LoginPage>}></Route>
         </Route>
       </Routes>
+      <ToastContainer />
     </Fragment>
   );
 }
